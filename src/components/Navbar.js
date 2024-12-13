@@ -24,8 +24,8 @@ function Navbar() {
 
             <a href='/'> <img src='logo512.png' alt='navbar-logo' width={50} height={50} /></a>
 
-                <ul className=' items-center gap-5 hidden md:flex animate__animated animate__zoomIn'>
-                    {items.map((item, i) => (<a key={i} href={item.url}><li className=' tracking-wider hover:underline underline-offset-8 text-slate-600 dark:text-gray-200 font-small text-lg hover:text-blue-600 dark:hover:text-blue-400 '>{item.title}</li></a>))}
+                <ul className=' items-center gap-5 flex animate__animated animate__zoomIn'>
+                    {items.map((item, i) => (<a key={i} href={item.url}><li className=' tracking-wider hover:underline underline-offset-8 text-slate-600 dark:text-gray-200 font-small text-md md:text-lg hover:text-blue-600 dark:hover:text-blue-400 '>{item.title}</li></a>))}
                 </ul>
                 <div className='flex items-center gap-5'>
 
