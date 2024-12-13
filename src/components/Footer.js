@@ -1,9 +1,12 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 export default function Footer({className}) {
+    const products = useSelector((state) => state.products);
+  console.log("product",products);
   return (
 
-    <footer className={`bg-gray-200 text-center text-white dark:bg-slate-800 ${className} bottom-0 w-full`}>
+    <footer className={`bg-gray-200 text-center text-white dark:bg-slate-800 ${className == "basket" && (products?.length > 1 ? "relative" : "absolute")} bottom-0 w-full`}>
       <div className=" pt-9">
         <div className="mb-9 flex justify-center">
           <a href='javascript:void(0)' className="mr-9 text-neutral-800 dark:text-neutral-200">

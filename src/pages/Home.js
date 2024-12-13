@@ -20,7 +20,7 @@ function Home() {
                         <BasketBar />
                     </div>
                 </div>
-                <Footer className={'relative'}/>
+                <Footer className={'home'}/>
             </div>
 
         </Provider >

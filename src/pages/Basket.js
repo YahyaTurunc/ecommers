@@ -16,7 +16,7 @@ function Basket() {
           <BasketDetailSticky />
         </div>
       </div>
-      <Footer className={'relative'} />
+      <Footer className={'basket'} />
 
     </div>
   </Provider >
